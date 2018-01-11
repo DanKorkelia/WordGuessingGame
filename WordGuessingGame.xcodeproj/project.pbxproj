@@ -12,6 +12,7 @@
 		580EA51F2007AA680097F244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580EA51D2007AA680097F244 /* Main.storyboard */; };
 		580EA5212007AA680097F244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580EA5202007AA680097F244 /* Assets.xcassets */; };
 		580EA5242007AA680097F244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580EA5222007AA680097F244 /* LaunchScreen.storyboard */; };
+		580EA52D2007BDF40097F244 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580EA52C2007BDF40097F244 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		580EA5202007AA680097F244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		580EA5232007AA680097F244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		580EA5252007AA680097F244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580EA52C2007BDF40097F244 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		580EA5182007AA680097F244 /* WordGuessingGame */ = {
 			isa = PBXGroup;
 			children = (
-				580EA5192007AA680097F244 /* AppDelegate.swift */,
+				580EA52B2007ACD70097F244 /* Support Files */,
 				580EA51B2007AA680097F244 /* ViewController.swift */,
 				580EA51D2007AA680097F244 /* Main.storyboard */,
+				580EA52C2007BDF40097F244 /* Game.swift */,
 				580EA5202007AA680097F244 /* Assets.xcassets */,
 				580EA5222007AA680097F244 /* LaunchScreen.storyboard */,
 				580EA5252007AA680097F244 /* Info.plist */,
 			);
 			path = WordGuessingGame;
+			sourceTree = "<group>";
+		};
+		580EA52B2007ACD70097F244 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				580EA5192007AA680097F244 /* AppDelegate.swift */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				580EA51C2007AA680097F244 /* ViewController.swift in Sources */,
+				580EA52D2007BDF40097F244 /* Game.swift in Sources */,
 				580EA51A2007AA680097F244 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,12 +287,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8XR48Z685;
 				INFOPLIST_FILE = WordGuessingGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramdankorkelia.WordGuessingGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -289,12 +302,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8XR48Z685;
 				INFOPLIST_FILE = WordGuessingGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramdankorkelia.WordGuessingGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
